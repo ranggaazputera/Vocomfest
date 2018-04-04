@@ -1,0 +1,330 @@
+@font-face{
+	src: url('../font/proxima_nova_soft/ProximaNovaSoft-Medium.otf');
+	font-family: 'pmedium';
+}
+
+@font-face{
+	src: url('../font/proxima_nova_soft/ProximaNovaSoft-Regular.otf');
+	font-family: 'proxima';
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+}
+
+body{
+	font-size: 14px;
+	background: #F2F6F7;
+}
+
+.wrapper{
+	width: 85%;
+	margin: 0 auto;
+}
+
+.wrapper2{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.wrapper3{
+	width: 95%;
+	margin: 0 auto;
+}
+
+.col-6{
+	width: 50%;
+	float: left;
+}
+
+.col-12{
+	width: 100%;
+	float: left;
+}
+
+header .header-content{
+	background: #F2F6F7;
+	width: 100%;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+.header-content {
+	overflow: hidden;
+	position: fixed;
+	transition-duration: 1s;
+	transition: .3s ease;
+	z-index: 99;
+}
+.header-content.change{
+	background-color: #FFF;
+	padding: 20px 0px 20px 0px;
+}
+
+header .logo{
+	float: left;
+}
+
+header .logo img{
+	width: 125px;
+}
+
+header .menu{
+	float: right;
+	margin-top: 15px;
+}
+
+header .menu nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+header .menu nav ul li a{
+	text-decoration: none;
+	color: #8692A2;
+	font-family: 'pmedium';
+	font-size: 1.1em;
+	margin: 10px 30px 10px 0px;
+	padding: 5px 10px;
+	cursor:pointer;
+}
+header .menu nav ul li a:before {
+  content: "";
+  position: absolute;
+  margin-right: 25px;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  border-bottom:solid 2px #2098D1;
+  height: 2px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+header .menu nav ul li {
+  display: inline-block;
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* Hamburger Menu */
+
+.burger {
+	display: none;
+	border: 0;
+	background: none;
+	outline: 0;
+	padding: 0;
+	cursor: pointer;
+	border-bottom: 4px solid #00AFE8;
+	width: 25px;
+	transition: border-bottom 1s ease-in-out;
+	-webkit-transition: border-bottom 1s ease-in-out; 
+}
+
+.burger ::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}	 
+
+.burger:before {
+	content: "";
+	display: block;
+	border-bottom: 4px solid #00AFE8;
+	width: 100%;
+	margin-bottom: 5px;
+	transition: transform 0.5s ease-in-out;    
+	-webkit-transition: -webkit-transform 0.5s ease-in-out;        
+}
+
+.burger:after {
+	content: "";
+	display: block;
+	border-bottom: 4px solid #00AFE8;
+	width: 100%;
+	margin-bottom: 5px;
+	transition: transform 0.5s ease-in-out;
+	-webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger-check {
+  display: none;
+}
+
+/* End Hamburger Menu */
+
+header .menu nav ul li a:hover{
+	color: #2098D1;
+}
+header .menu nav ul li a:hover:before, header .menu nav ul li a:active:before {
+  left: 0;
+  right: 0;
+}
+
+section{
+	clear: both;
+}
+
+section .upload{
+	margin-top: 150px;
+	background: #FFF;
+	width: 100%;
+	height: auto;
+	display: inline-block;
+}
+
+section .upload .col-12{
+	background: transparent;
+	height: auto;
+}
+
+section .upload .upload-title{
+	border-bottom: solid 1px #D7D7D7;
+	padding-top: 20px;
+	padding-bottom: 53px;
+	background: transparent;
+}
+
+section .upload .heading{
+	float: left;
+	margin-top: 5px;
+}
+
+section .upload .heading h3{
+	font-family: 'pmedium';
+	color: #565E75;
+	font-size: 1.5em;
+}
+
+section .upload .button{
+	float: right;
+}
+
+section .upload .button button{
+	border: none;
+	background: linear-gradient(#F0487C, #FA6C98);
+	font-family: 'pmedium';
+	color: #FFF;
+	text-transform: uppercase;
+	padding: 10px 20px;
+}
+
+section .upload .button button:hover{
+	transition: all .3s ease;
+	cursor: pointer;
+}
+section .upload .button button {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+	.btn-hide{
+		display: none;
+	}
+
+section .upload .button button:hover, section .upload .button button:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+section .upload .photo{
+	border: dashed 2px #E1E1E1;
+	width: 80%;
+	box-sizing: border-box;
+	margin-left: 15px;
+	height: auto;
+	padding: 125px 20px;
+	margin-top: 45px;
+	margin-bottom: 50px;
+}
+
+section .upload .photo i{
+	color: #76E0BF;
+	font-size: 5em;
+}
+
+section .upload .photo p{
+	color: #C2C2C2;
+	font-family: 'pmedium';
+	margin-top: 15px;
+	font-size: 1.1em;
+}
+
+section .upload .photo a{
+	text-decoration: none;
+	color: #F4769D;
+}
+
+section .upload .photo{
+	text-align: center;
+}
+
+section .upload .form{
+	margin-top: 45px;
+}
+
+section .upload .form label{
+	font-family: 'pmedium';
+	color: #6C7386;
+	font-size: 1.15em;
+}
+
+section .upload .form span{
+	color: #B1B1B1;
+}
+
+section .upload .form input, section .upload .form textarea{
+	border-radius: 5px;
+	background: transparent;
+	border: solid 1px #CCC;
+	font-size: 1.1em;
+	font-family: 'proxima';
+	color: #6C7386;
+	padding: 5px 10px;
+	margin: 10px 0;
+	width: 350px;
+}
+
+section .upload .form textarea{
+	height: 193px;
+}
+
+footer{
+	clear: both;
+	background: #426779;
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+}
+.bottom{
+	background-color: #416779 !important;
+	height: auto;
+}
+.bawah{
+	width: 80%;
+	margin: 0 auto;
+	padding: 30px 0px 45px 0px;
+	font-family: 'proxima';
+	color: #A9B8C0;
+}
+.bawah a {
+	text-decoration: none;
+	color: #A9B8C0;
+}
+.bot-bot{
+	width: 50%;
+	margin: 0 auto;
+	float: left;
+}
+.bot-bot img{
+	width: 80px;
+	float: right;
+}
